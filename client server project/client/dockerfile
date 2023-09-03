@@ -1,0 +1,7 @@
+# Just a remember, dockerfile must always start by importing the base image.
+# We use the keyword 'FROM' to do that.
+# In our example, we want to import the python image (from DockerHub).
+# Same thing than the *server* Dockerfile.
+FROM python:latest
+ADD client.py /client/
+WORKDIR /client/
